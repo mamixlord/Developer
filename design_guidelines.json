@@ -1,0 +1,99 @@
+{
+  "theme": "Dark Theme",
+  "archetype": "Swiss & High-Contrast (Industrial Premium)",
+  "colors": {
+    "background": "#0A0A0B",
+    "surface": "#1A1A1D",
+    "primary": "#FF5A00",
+    "secondary": "#27272A",
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#A1A1AA",
+      "accent": "#FF5A00"
+    },
+    "borders": "rgba(255, 255, 255, 0.1)"
+  },
+  "typography": {
+    "headings": {
+      "family": "Clash Display",
+      "weight": "font-bold to font-black",
+      "tracking": "tracking-tight",
+      "description": "Use Clash Display for a strong, engineered, industrial look. Alternatively, Cabinet Grotesk or Anton."
+    },
+    "body": {
+      "family": "IBM Plex Sans",
+      "weight": "font-normal",
+      "tracking": "tracking-normal",
+      "description": "IBM Plex Sans fits the technical 'metal fabrication' angle perfectly."
+    }
+  },
+  "layout_spacing": {
+    "container": "max-w-7xl mx-auto px-6 lg:px-12",
+    "section_padding": "py-24 lg:py-32",
+    "bento_grid": "grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-8",
+    "admin_grid": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+    "description": "Use wide gap-8/gap-12 for bento grids on marketing side. Use tight gap-4/gap-6 for the admin control room grid. Avoid generic symmetry."
+  },
+  "components_instructions": {
+    "hero": "Use Three.js (@react-three/fiber and @react-three/drei). Create an interactive 3D background with dark ambient lighting, an abstract or literal iron gate model, and orange 'Sparkles' mimicking welding sparks. Overlay text with large headings.",
+    "buttons": "Square edges (rounded-none or rounded-sm). Hover state must have a high contrast background (e.g., bg-[#FF5A00] text-black) and scale slightly.",
+    "cards": "Flat background (bg-[#1A1A1D]), sharp edges or minimal radius (rounded-sm max). Include a 1px subtle border (border-white/10). On hover, transition border to border-[#FF5A00]/50 and add slight -translate-y-1.",
+    "forms": "Use Shadcn customized for dark industrial. Input backgrounds #0A0A0B, borders #27272A, text white. Ring focus to be #FF5A00. Make them strictly functional.",
+    "admin_panel": "Dense, functional UI. Sidebar nav. High-contrast data tables using Shadcn table. Cardless layout where possible, relying on 1px borders to separate rows.",
+    "data_testid": "All interactive and key informational elements MUST include a `data-testid` attribute (e.g., data-testid='submit-offer-btn')."
+  },
+  "visual_enhancers": [
+    "Use framer-motion for staggering list items and fade-up on scroll.",
+    "Apply a subtle noise texture overlay or black brushed metal texture to the background to give a 'gritty/machined' feel.",
+    "Use lenis for smooth scrolling.",
+    "Add 'tracing beam' or glowing border effect to active portfolio items or primary service cards to make them pop out of the dark."
+  ],
+  "image_urls": {
+    "hero_sparks": [
+      {
+        "url": "https://images.unsplash.com/photo-1565618408044-681f42bdd0be?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwyfHx3ZWxkaW5nJTIwbWV0YWwlMjBzcGFya3MlMjBkYXJrfGVufDB8fHx8MTc3NTY2NDIzN3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Welding fire and sparks in the dark",
+        "category": "hero_fallback_or_background"
+      }
+    ],
+    "services": [
+      {
+        "url": "https://images.unsplash.com/photo-1696521938054-399082dd4f8c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBibGFjayUyMGlyb24lMjBnYXRlJTIwZmVuY2V8ZW58MHx8fHwxNzc1NjY0MjM3fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Modern black iron gate fence",
+        "category": "service_demir_kapi"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1738162837619-5d0b158abcec?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHw0fHxjbmMlMjBsYXNlciUyMG1ldGFsJTIwY3V0dGluZ3xlbnwwfHx8fDE3NzU2NjQyMzd8MA&ixlib=rb-4.1.0&q=85",
+        "description": "CNC Laser cutting metal",
+        "category": "service_cnc_kesim"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1598635232306-8953c6a2fbc8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBibGFjayUyMGlyb24lMjBnYXRlJTIwZmVuY2V8ZW58MHx8fHwxNzc1NjY0MjM3fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Metal Fence with red flowers",
+        "category": "service_bahce_citleri"
+      }
+    ],
+    "about_workshop": [
+      {
+        "url": "https://images.unsplash.com/photo-1720036237334-9263cd28c3d4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwyfHxtZXRhbCUyMGZhYnJpY2F0aW9uJTIwZmFjdG9yeSUyMGRhcmt8ZW58MHx8fHwxNzc1NjY0MjU2fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Dark metal fabrication factory",
+        "category": "about_image"
+      }
+    ],
+    "textures": [
+      {
+        "url": "https://images.unsplash.com/photo-1666555038185-8323c553de64?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzZ8MHwxfHNlYXJjaHwyfHxibGFjayUyMGJydXNoZWQlMjBtZXRhbCUyMHRleHR1cmV8ZW58MHx8fHwxNzc1NjY0MjU2fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Black brushed metal texture",
+        "category": "background_texture"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Use standard JS/JSX files for React (not TSX files as this is a JS codebase).",
+    "For the hero, implement @react-three/fiber with a dark scene, adding sparks using <Sparkles /> component, and a basic iron gate geometry or imported model. The user specifically asked for '3D iron gate opening and welding sparks animation'.",
+    "Ensure max contrast in the UI. No soft gradients, rely on solid flat colors with sharp borders.",
+    "Align text to the left for large paragraphs to maintain the engineered precision look. Center align is fine for short headers.",
+    "Implement the offer request form using customized Shadcn UI components. Ensure all inputs are accessible with proper labels.",
+    "For the Admin panel, design a 'Control Room' dense layout. Everything functional, no wasted space. Use Shadcn tables for viewing Offer Requests and Contact Messages."
+  ]
+}
